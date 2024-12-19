@@ -121,16 +121,16 @@ class _EmployeeState extends State<Employee> {
                       await DatabaseMethods()
                           .addEmployeeDetails(employeeInfoMap, Id)
                           .then((Value) {
-                            Fluttertoast.showToast(
-        msg: "Employee Detail has been uploaded successfully",
-        toastLength: Toast.LENGTH_SHORT,
-        gravity: ToastGravity.CENTER,
-        timeInSecForIosWeb: 1,
-        backgroundColor: Colors.red,
-        textColor: Colors.white,
-        fontSize: 16.0
-    );
-                          });
+                        Fluttertoast.showToast(
+                            msg:
+                                "Employee Detail has been uploaded successfully",
+                            toastLength: Toast.LENGTH_SHORT,
+                            gravity: ToastGravity.CENTER,
+                            timeInSecForIosWeb: 1,
+                            backgroundColor: Colors.red,
+                            textColor: Colors.white,
+                            fontSize: 16.0);
+                      });
                     },
                     child: Text(
                       "Add",
